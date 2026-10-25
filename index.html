@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f4f0e9">
+	<title>Clara Solis — Photographer</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+	<style>
+		:root{--paper:#f4f0e9;--ink:#262722;--muted:#77786f;--rust:#a9674f;--line:#ded9d0}
+		*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+		a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 48px));margin:auto}
+		header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+		.logo{font:500 24px "Playfair Display",serif;letter-spacing:.01em}nav{display:flex;gap:34px}nav a,.eyebrow,.button,.work-link{font-size:10px;letter-spacing:.16em;text-transform:uppercase}nav a{transition:color .2s}nav a:hover{color:var(--rust)}
+		.hero{display:grid;grid-template-columns:1fr .92fr;gap:9%;align-items:center;padding:72px 0 94px}.eyebrow{color:var(--rust);font-weight:600}
+		h1,h2{font-family:"Playfair Display",serif;font-weight:400}h1{font-size:clamp(52px,7vw,86px);line-height:1.02;letter-spacing:-.045em;margin:22px 0}h1 em{color:var(--rust)}
+		.intro{max-width:430px;font-size:14px;line-height:1.9;color:var(--muted);margin:0 0 28px}.button{display:inline-flex;align-items:center;gap:24px;padding:16px 20px;background:var(--ink);color:white;transition:background .2s}.button:hover{background:var(--rust)}.button b{font-size:17px;font-weight:400}
+		.portrait{height:505px;position:relative}.portrait img{width:100%;height:100%;object-fit:cover;display:block}.caption{position:absolute;right:-14px;bottom:22px;background:var(--paper);padding:14px 17px;font-size:9px;letter-spacing:.13em;text-transform:uppercase}
+		.work-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}h2{font-size:40px;letter-spacing:-.025em;margin:9px 0 0}.work-link{border-bottom:1px solid var(--ink);padding-bottom:7px}
+		.gallery{display:grid;grid-template-columns:1.13fr .82fr 1fr;gap:15px}.gallery figure{margin:0;height:330px;overflow:hidden;position:relative;background:#e4ded5}.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.gallery figure:hover img{transform:scale(1.04)}.gallery figcaption{position:absolute;inset:auto 0 0;padding:32px 16px 15px;background:linear-gradient(transparent,rgba(0,0,0,.52));color:#fff;font-size:9px;letter-spacing:.14em}
+		.about{margin-top:88px;padding:44px 0 52px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:8%;align-items:start}.about h2{font-size:34px}.about p{font:400 24px/1.6 "Playfair Display",serif;margin:0;max-width:680px}.about p em{color:var(--rust)}
+		footer{border-top:1px solid var(--line);padding:24px 0;display:flex;justify-content:space-between;color:var(--muted);font-size:9px;letter-spacing:.12em}
+		@media(max-width:700px){.container{width:calc(100% - 36px)}header{height:70px}.logo{font-size:21px}nav{gap:17px}nav a{font-size:9px}.hero{grid-template-columns:1fr;padding:52px 0 64px;gap:34px}h1{font-size:60px}.portrait{height:390px}.caption{right:-8px}.gallery{grid-template-columns:1fr 1fr;gap:10px}.gallery figure{height:240px}.gallery figure:last-child{display:none}.work-heading{gap:12px}h2{font-size:34px}.work-link{font-size:9px;white-space:nowrap}.about{grid-template-columns:1fr;gap:18px;margin-top:68px;padding:35px 0 40px}.about p{font-size:21px}}
+		@media(max-width:390px){nav{gap:11px}.gallery figure{height:195px}footer{font-size:8px}}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a class="logo" href="#top">Clara Solis</a>
+			<nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="mailto:hello@clarasolis.photo">Contact</a></nav>
+		</header>
+		<main>
+			<section class="hero" id="top">
+				<div>
+					<div class="eyebrow">Photographer · Based in Barcelona</div>
+					<h1>Life, in its<br><em>own light.</em></h1>
+					<p class="intro">I’m Clara, a photographer drawn to honest moments, quiet details, and the stories we carry with us. Available for weddings, portraits, and journeys near and far.</p>
+					<a class="button" href="mailto:hello@clarasolis.photo">Tell me your story <b>↗</b></a>
+				</div>
+				<div class="portrait">
+					<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1100&q=85" alt="Warm, natural-light portrait">
+					<div class="caption">Portraits with feeling · 2024</div>
+				</div>
+			</section>
+			<section id="work" aria-labelledby="work-title">
+				<div class="work-heading"><div><div class="eyebrow">A few recent stories</div><h2 id="work-title">Selected work</h2></div><a class="work-link" href="mailto:hello@clarasolis.photo">Let’s collaborate ↗</a></div>
+				<div class="gallery">
+					<figure><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding celebration in golden afternoon light" loading="lazy"><figcaption>THE QUIET KIND OF FOREVER</figcaption></figure>
+					<figure><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=85" alt="A candid outdoor portrait" loading="lazy"><figcaption>SOFTLY, HERSELF</figcaption></figure>
+					<figure><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85" alt="Sun setting over a peaceful landscape" loading="lazy"><figcaption>SOMEWHERE SLOW</figcaption></figure>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<div><div class="eyebrow">A little about me</div><h2>Behind the lens</h2></div>
+				<p>The best photographs feel like <em>being there again</em>—the warmth, the laughter, the way the light fell just right. My approach is calm, curious, and always rooted in connection.</p>
+			</section>
+		</main>
+		<footer><span>© 2024 CLARA SOLIS PHOTOGRAPHY</span><span>MADE WITH LIGHT & CARE</span></footer>
+	</div>
+</body>
+</html>
